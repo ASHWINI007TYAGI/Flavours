@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('background.jpg') center/cover no-repeat; /* Set background image */
+            color: #fff; /* Set text color to white */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle text shadow for emphasis */
+            color: #FFD700; /* Set a gold color for the text */
+            font-family: 'Pacifico', cursive; /* Use a decorative font for the restaurant name */
+        }
+
+        button {
+            width: 180px; /* Set button width */
+            height: 60px; /* Set button height */
+            padding: 10px; /* Add padding for better appearance */
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #26d032; /* Set button color to a shade of blue */
+            color: #fff; /* Set button text color to white */
+            border: none; /* Remove button border */
+            border-radius: 8px; /* Add border radius for a rounded appearance */
+            transition: background-color 0.3s ease; /* Add a smooth transition effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        }
+
+        button:hover {
+            background-color: #0a0c0e; /* Darken button color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flavours Restaurant</h1>
+
+    <button onclick="redirectToAnotherPage()">Explore Menu</button>
+
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = 'home.html'; // Replace with the actual URL of the page you want to navigate to
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: url('background.jpg') center/cover no-repeat;   /* Set background color */
+            color: #fff; /* Set text color to white */
+            min-height: 90vh; /* Ensure at least 90% of the viewport height */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Add a stronger text shadow for emphasis */
+            color: #FFD700; /* Set a gold color for the text */
+            font-family: 'Pacifico', cursive; /* Use a decorative font for the restaurant name */
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center images horizontally */
+            max-width: 700px; /* Set max width for better responsiveness */
+            padding: 20px; /* Add padding for a cleaner look */
+            background-color: rgba(0, 0, 0, 0.8); /* Set a semi-transparent black background */
+            border-radius: 15px; /* Add border radius for a rounded appearance */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced box shadow for depth */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .image-container:hover {
+            transform: scale(1.05); /* Enlarge the container on hover for emphasis */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Set max width for images within the container */
+            margin-bottom: 15px; /* Add space between images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px; /* Add border radius for a rounded appearance */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* Enlarge the image on hover for emphasis */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flavours Restaurant</h1>
+
+    <div class="image-container">
+        <img src="image2 (1).jpg" alt="Image 1">
+        <img src="image2 (2).jpg" alt="Image 2">
+    </div>
+
+</body>
+</html>
