@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "src": "/blog",
+        "dest": "/blog.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }
+  
